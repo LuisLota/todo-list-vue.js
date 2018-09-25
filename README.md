@@ -1,3 +1,3 @@
-# TODO LIST APP USING VUE.JS
-#JUST DOWNLOAD AND YOU CAN USE 
-# NO NPM NEEDED 
+# TODO LIST APP 
+#Just download and you can use it.
+# No npm needed or other type of setup.
