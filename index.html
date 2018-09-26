@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./components/style.css">
     <title>Todo list app</title>
@@ -18,7 +17,7 @@
             <h1 class="text-center display-1">{{title}}</h1>
          
          
-        <form @submit.prevent="addTodo" class="col-8 mx-auto form-signin">
+        <form @submit.prevent="addTodo" class="col-12 mx-auto form-signin">
             <div class="form-group">
                 <h2 class="text-center">{{numberTask}} tasks</h2>
             <div class="form-label-group">
@@ -27,23 +26,32 @@
  
         </div>
             
-        </form>
+       
         <div class="igual">
         <div class="form-label-group">
             
-        <ul>
-            <li v-for="todo in todos">
-
-                    <button @click="removeTodo(todo)" type="button" name="button btn-block space " class="close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>    
-                        
-                 <!-- <button class="btn  btn-sm btn-primary " v-model="todo.done">feito</button>       -->
+         <transition-group name="card" tag="ul">
+        
+            <li class="card" v-for="(todo,i) in todos" :key="i">
+                          <div class="buttons"> 
+                                <button @click="removeTodo(todo)" type="button" name="button " class="close ">
+                                        <span aria-hidden="true">Eliminar</span>
+                                    </button>
+                                    <button @click="remove(todo)" type="button" name="button" class="close ">
+                                            <span aria-hidden="true">Done</span>
+                                        </button>
+                                   
+                    </div>
                              
-                <span :class="{done: todo.done}">{{todo.title}}</span>
+                <span :class="{done: todo.did}"> {{todo.title}}</span>
                
             </li>
-        </ul>
+        </form>
+            
+                      
+          
+        </transition-group>
+          
     
     </div>
     </div>

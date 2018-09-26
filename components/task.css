@@ -1,4 +1,47 @@
-ul li {
+ .card ul li {
     text-decoration:none;
     list-style-type: none;
+    margin-top:10px;  }
+
+
+.card {
+  display: flex;
+  /* border:1px solid black; */
+  transition: all 0.5s;
+  text-align: center;
+  /* text-decoration:line-through;
+  justify-items: center;
+  align-items: center; */
+  
+
+}
+
+.buttons{border:1px solid black;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.card-enter, .card-leave-to
+ {
+  opacity: 0;
+  transform: scale(0);
+}
+.card-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+.card-move {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+
+/*feito*/
+.done{
+  text-decoration: line-through;
 }
