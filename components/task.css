@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster');
-h1{
-  font-family: 'Indie Flower';
-} 
+
 
 .card ul li {
     text-decoration:none;
@@ -18,7 +16,9 @@ h1{
 border:none;
 }
 
-img{width:35px;height: auto;margin-bottom:8px; }
+img{
+  width:35px;height: auto;margin-bottom:8px;
+ }
 
 
 .card-enter, .card-leave-to
@@ -39,17 +39,13 @@ img{width:35px;height: auto;margin-bottom:8px; }
 }
 
 
-/*feito*/
 .done{
   text-decoration: line-through;
   color:black;
   font-weight:bolder;
 }
 
-.something{
- width: 100%;
-  
-}
+
 
 .colors{
   font-size:30px;

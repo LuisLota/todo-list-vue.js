@@ -4,10 +4,8 @@ data: {
     title: 'Todo App ',
     newTodo: '',
     todos: [],
-    numberTask: 0,
-    did: false
-    
-    
+    numberTask: 0
+   
 },
 
 methods: {
@@ -34,7 +32,7 @@ methods: {
 
     remove(todo){
         const todoIndex = this.todos.indexOf(todo);
-       this.did = true;
+      
     }
   
 }

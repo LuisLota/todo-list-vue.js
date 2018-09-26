@@ -17,7 +17,7 @@
          
         <form @submit.prevent="addTodo" class="col-12 mx-auto form-signin">
             <div class="form-group">
-                <h2 class="text-center">{{numberTask}} tasks</h2>
+                <h2 class="text-center numb">{{numberTask}} tasks</h2>
             <div class="form-label-group">
                     <input v-model="newTodo" type="text" id="newTodo" class="form-control " placeholder="create a task"  required autofocus>               
                   </div>
@@ -26,7 +26,7 @@
             
        
 
-        <div class="form-label-group something ">
+        <div class="form-label-group  ">
                
          <transition-group name="card" tag="ul">
         
@@ -34,7 +34,7 @@
                 
                    <a href="#"><img src="./svg/si-glyph-remove.svg" class="img"  @click="removeTodo(todo)"></a>
                       
-                <input type="checkbox" name="check" value="" id="slideTwo" v-model="todo.done">
+                <input type="checkbox" name="check" value=""  v-model="todo.done">
                
                    <span :class="{done: todo.done}" class="colors"> {{todo.title}}</span>
                 
