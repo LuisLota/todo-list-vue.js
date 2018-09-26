@@ -29,6 +29,7 @@ methods: {
         const todoIndex = this.todos.indexOf(todo);
         this.todos.splice(todoIndex,1);
         this.numberTask < 0 ? this.numberTask = 0 :  this.numberTask-=1;
+     this.newTodo = '';
     },
 
     remove(todo){

@@ -30,10 +30,13 @@
                
          <transition-group name="card" tag="ul">
         
-            <li class="card" v-for="(todo,i) in todos" :key="i">
-                    <a href="#"><img src="./svg/si-glyph-remove.svg" class="img"  @click="removeTodo(todo)"></a>
-                    <a href="#"><img src="./svg/si-glyph-pin-location.svg" class="img"  @click=""></a>
-                    <span :class="{done: todo.did}" class="colors"> {{todo.title}}</span>
+            <li class="card" style="border:none;" v-for="(todo,i) in todos" :key="i">
+                
+                   <a href="#"><img src="./svg/si-glyph-remove.svg" class="img"  @click="removeTodo(todo)"></a>
+                      
+                <input type="checkbox" name="check" value="" id="slideTwo" v-model="todo.done">
+               
+                   <span :class="{done: todo.done}" class="colors"> {{todo.title}}</span>
                 
             </li>
         </form>
