@@ -1,0 +1,9 @@
+@import url('./todo.css');
+@import url('./task.css');
+@import url('./button.css');
+
+*{margin:0px;padding:0px;}
+body{background:purple;height: 100vh;}
+#intro{display: flex;align-items: center;justify-items: center;padding:10px;}
+.igual{display: flex;align-items: center;justify-items: center;padding:10px;}
+
