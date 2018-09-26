@@ -19,7 +19,7 @@ methods: {
         this.did = false;
         this.newTodo = '';
         this.numberTask+=1;
-        
+        localStorage.setItem('tasks',JSON.stringify(this.todos)); 
          
     },
 
