@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./components/style.css">
     <title>Todo list app</title>
     
-
-   
 <body>
       
         <div class="container">
@@ -27,33 +25,22 @@
         </div>
             
        
-        <div class="igual">
-        <div class="form-label-group">
-            
+
+        <div class="form-label-group something ">
+               
          <transition-group name="card" tag="ul">
         
             <li class="card" v-for="(todo,i) in todos" :key="i">
-                          <div class="buttons"> 
-                                <button @click="removeTodo(todo)" type="button" name="button " class="close ">
-                                        <span aria-hidden="true">Eliminar</span>
-                                    </button>
-                                    <button @click="remove(todo)" type="button" name="button" class="close ">
-                                            <span aria-hidden="true">Done</span>
-                                        </button>
-                                   
-                    </div>
-                             
-                <span :class="{done: todo.did}"> {{todo.title}}</span>
-               
+                    <a href="#"><img src="./svg/si-glyph-remove.svg" class="img"  @click="removeTodo(todo)"></a>
+                    <a href="#"><img src="./svg/si-glyph-pin-location.svg" class="img"  @click=""></a>
+                    <span :class="{done: todo.did}" class="colors"> {{todo.title}}</span>
+                
             </li>
         </form>
-            
-                      
           
         </transition-group>
           
-    
-    </div>
+ 
     </div>
     </div>
     </main> 

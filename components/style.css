@@ -5,5 +5,7 @@
 *{margin:0px;padding:0px;}
 body{background:purple;height: 100vh;}
 #intro{display: flex;align-items: center;justify-items: center;padding:10px;}
-.igual{display: flex;align-items: center;justify-items: center;padding:10px;}
+.igual{display: flex;align-items: center;justify-items: center;
+    align-content: center;
+    padding:10px;border:1px solid black;}
 

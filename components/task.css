@@ -1,27 +1,21 @@
  .card ul li {
     text-decoration:none;
     list-style-type: none;
-    margin-top:10px;  }
+    margin-top:10px;
+    }
 
 
 .card {
-  display: flex;
+ 
   /* border:1px solid black; */
   transition: all 0.5s;
-  text-align: center;
-  /* text-decoration:line-through;
-  justify-items: center;
-  align-items: center; */
-  
+display: inline-block;
+  margin:10px;
 
 }
 
-.buttons{border:1px solid black;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  
-}
+img{width:35px;height: auto; }
+
 
 .card-enter, .card-leave-to
  {
@@ -42,6 +36,10 @@
 
 
 /*feito*/
-.done{
-  text-decoration: line-through;
+.done{font-size:40px;}
+
+
+.something{
+ width: 100%;
+  
 }
