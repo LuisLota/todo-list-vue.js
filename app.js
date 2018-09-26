@@ -4,16 +4,13 @@ data: {
     title: 'Todo-List ',
     newTodo: '',
     dayOfWeek: '',
-    todos: []
+    todos: [],
+    numberTask:0,
+    dateNow: ''
+    
 },
 
 methods: {
-
-    showTime(){
-      // DAY OF THE WEEK
-    },
-
-
 
     addTodo(){
        // console.log(this.newTodo);
@@ -24,6 +21,7 @@ methods: {
         });
 
         this.newTodo = '';
+        this.numberTask+=1;
         
     },
 
@@ -34,10 +32,12 @@ methods: {
 
     allDone(){
 
-       
         this.todos.forEach(todo => {
         todo.done = true;   
+        
         });
-    }
+    },
+
+
 }
 });
